@@ -1,5 +1,8 @@
+package set3;
+
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class medianno {
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
@@ -9,8 +12,14 @@ public class medianno {
 		for(int i=0;i<a;i++){
 			ar[i]=in.nextInt();
 		}
-		Arrays.sort(ar);	
+		Arrays.sort(ar);
+		if(a%2!=0){
 		System.out.print(ar[a/2]);
+		}
+		else{
+			int b=a/2;
+			System.out.println(ar[b-1]+ar[b]);
+		}
 	}
   }
 }
